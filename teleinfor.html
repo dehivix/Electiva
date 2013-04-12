@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Teleinformatica</title>
+<script type="text/javascript" src="jquery.js"></script>
+<style type="text/css">
+@import url(css.css);
+</style>
+<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" src="validacion.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+	
+	
+	$("#nav li").prepend("<span></span>"); //Throws an empty span tag right before the a tag
+	
+	$("#nav li").each(function() { //For each list item...
+		var linkText = $(this).find("a").html(); //Find the text inside of the a tag
+		$(this).find("span").show().html(linkText); //Add the text in the span tag
+	}); 
+	
+	$("#nav li").hover(function() {	//On hover...
+		$(this).find("span").stop().animate({ 
+			marginTop: "-40" //Find the span tag and move it up 40 pixels
+		}, 250);
+	} , function() { //On hover out...
+		$(this).find("span").stop().animate({
+			marginTop: "0" //Move the span back to its original state (0px)
+		}, 250);
+	});
+	
+	
+});
+</script>
+<script type="text/javascript">
+function showLightbox() {
+	document.getElementById('over').style.display='block';
+	document.getElementById('fade').style.display='block';
+}
+function hideLightbox() {
+	document.getElementById('over').style.display='none';
+	document.getElementById('fade').style.display='none';
+}
+</script>
+</head>
+<body>
+    <div id="wrapper">
+	<div id="header">
+<h1 align="center">...:Bienvenido:...</h1>
+<h2 align="center">&quot;A Nuestra Pagina Informativa de Teleinformatica&quot;</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+
+    <ul id="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="temas.html">Temas</a></li>
+        <li><a href="imagenes.html">Imagenes</a></li>
+        <li><a href="coment.php">Ver Comentarios</a></li>
+        <li><a href="comentarios.php">Comentar</a></li>
+    </ul>
+    <div id="content">
+	
+	<div class="post">
+			<h1 align="center"><strong>Teleinformatica</strong></h1>
+            <h3 class="date"><span class="title"><img src="images/down_16.png" alt="" width="16" height="16" /></span>Descargar&nbsp;<span class="title"><a href="archivos/tele/teleinformatica.pdf"><img src="images/document-pdf.png" alt="" width="16" height="16" /></a></span> <span class="title"><a href="archivos/conmutacion/conmutacion.doc"><img src="images/document-word-text.png" alt="" width="16" height="16" /></a></span></h3>
+							<div class="entry">
+				  <p>&nbsp;&nbsp;&nbsp;&nbsp;Conjunto de servicios y técnicas que asocian las telecomunicaciones y la informática. La telemática ofrece posibilidades de comunicación e información, tanto en el trabajo como en el hogar. Agrupa servicios muy diversos, por ejemplo, la telecopia, el teletexto o las redes telemáticas como Internet.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;En la década de 1970, la evolución de la informática requirió la creación de nuevos servicios capaces de almacenar, recibir y procesar a distancia datos e informaciones. Ello condujo a la invención de la teleinformática, que descentralizaba mediante redes de telecomunicaciones los recursos ofrecidos por la informática. Estas redes permitieron igualmente mejorar las transmisiones de datos escritos. Con el fin de paliar la lentitud del telex y la telegrafía, se crearon la telecopia y otros servicios de oficina. Todos estos servicios informáticos proporcionados por una red de telecomunicaciones se reagruparon bajo el nombre de ‘telemática’, neologismo propuesto por los autores franceses de un informe sobre La informática de la sociedad (1978).&nbsp;</p>
+			  </div>
+              <div class="entry">
+              <p><b>Bases de la informatica</b><br /><br />
+              <b><a>La sociedad de la informativa</a></b><br /><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;La información ha representado desde tiempos muy remotos un papel muy importante en el desarrollo de las sociedades, y ha venido evolucionando significativamente, presentándose de distintas maneras pero manteniendo el mismo objetivo, la comunicación entre las personas.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;En la sociedad primitiva la información se intercambiaba entre sus componentes(*) para lograr sobrevivir en un ambiente hostil, hoy en día el intercambio de información puede representar un factor vital para el desempeño de los procesos de muchas grandes empresas. Los conocimientos que progresivamente se van teniendo del entorno originan la necesidad de la comunicación. El nacimiento de la comunicación implica, asimismo, la existencia de los elementos que la hacen posible y que constantemente están interviniendo en el proceso de la comunicación: los interlocutores y el medio de comunicación.
+              
+              </p>
+              
+              </div>
+              <div class="entry">
+              <p><b>Fundamento de la Teleinformatica.</b><br /><br />
+               &nbsp;&nbsp;&nbsp;&nbsp;La teleinformática, si bien forma un cuerpo de doctrina independiente, necesita de una envoltura técnica que se encuadra en la ingeniería y en la física electrónica y en toda una serie de conocimientos específicos de otras áreas. Estos conocimientos se conocen como fundamentos de la teleinformática.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;A continuación se expondrá los fundamentos a través de las distintas redes de telecomunicación, tanto a un nivel de descripción general de las mismas como de sus elementos integrantes.
+              
+              </p>
+              </div>
+              <div class="entry">
+              <p><b>Las redes telegráficas</b><br /><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;Las redes de telecomunicación actuales son el fruto de una continua evolución propiciada por el avance en el campo de la ciencia y de la tecnología. Buena prueba de ello lo constituye el telégrafo. Surge en Norteamérica al mismo tiempo que el ferrocarril, en sus primeros momentos se utilizó de manera creciente para hacer llegar las noticias a los periódicos en el tiempo mas breve posible, y con finas de comunicación general, después. Marco un gran hilo tecnológico en el campo de las comunicaciones al permitir la comunicación directa entre Europa y América en 1858. En los primeros equipos se usaba el código Morse. En la actualidad se utilizan equipos similares a las maquinas de escribir, llamados teletipos, que permiten la comunicación directa usando el lenguaje natural, llamándose servicio telex. El telex, posterior a la red telefónica, se origina alrededor de la segunda guerra mundial y es un evolucionadisimo sistema telegráfico con una ventaja sobre la red telefónica: deja constancia escrita del mensaje.
+              
+              </p>
+              </div>
+              <div class="entry">
+              <p><b>Las redes telefónicas</b><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;En 1876, tan sólo treinta años después de que se instalara la primera línea telegráfica entre Washington y Baltimore, el padre del teléfono Alexander G. Bell patentaba su invento. Inicialmente el teléfono – que permitía la comunicación bidireccional de la voz entre lugares situados a poca distancia-, se desarrolló como medio de comunicación en áreas urbanas, puesto que tan solo podía cubrir cortas distancias. Avances técnicos posteriores permitieron aumentar la distancia y hacer posible una comunicación selectiva.<br />	
+              <ul>
+              <li>El terminal Telefónico es el encargado de proporcionar la interfaz adecuado con los aparatos fonador y auditivo para lograr la transmisión de información vocal entre usuarios distantes. Para realizar su misión dispone –en la parte de recepción de voz -, de un dispositivo encargado de la transformación en electricidad de las ondas sonoras llamado micrófono. Del lado emisor, el encargado de realizar la función inversa es el auricular. Las tecnologías que se emplearon en la realización práctica de los terminales telefónicos fueron un reflejo de los avances en el campo de la electrónica, pasando desde los primeros aparatos basándose en tecnología de carbón hasta los modernos terminales telefónicos piezoeléctricos.</li>
+              <li>Las centrales de conmutación son las encargadas de proporcionar la selectividad necesaria en una llamada telefónica automática. Mediante ésta el usuario del servicio logra entablar una conversación con la persona que desea. Sin embargo, el procedimiento que permite que el destinatario, al descolgar su terminal telefónico, pueda intercambiar información con el que origina la llamada es necesario la concurrencia de dos funciones, como son la señalización y la transmisión. La señalización es el conjunto de informaciones elaboradas por el usuario emisor de la red telefónica de una parte, y por los elementos integrantes de la propia red por otra, que hacen posible mediante su análisis e interpretación que la central de conmutación ponga en contacto físico al usuario emisor con el receptor. </li>
+              <li>La señalización permite además otra serie de cosas, como la identificación del servicio del destino y la tarificación de la llamada y de los servicios en ella involucrados.</li>
+              </ul>
+              <p><br />
+              La red Telefónica propiamente dicha es el conjunto de líneas telefónicas que, dispuestas según criterios de optimización de las mismas, hacen posible el trasiego de información entre el usuario emisor y el usuario receptor.</p>
+              <p><img src="images1/nokia-su-33-1.jpg" alt="" width="86" height="105" /><span class="entry"><strong>Equipos Terminal de Datos (DTE) :</strong></span> Un terminal puede definirse, en sentido amplio como aquel equipo que, unido a la línea mediante los interfaces adecuados, permite la entrada y salida desde hacia otro dispositivo de características similares utilizando para ello los medios de protocolo de comunicación adecuado. </p>
+              <p><strong>Equipos  de Circuitos de Datos (DCE) :</strong> Es un  dispositivo cuya función es adaptar la señal que viene del DTE a el medio de transmisión.  Por ejemplo: un equipo Módem. </p>
+              <p><strong>Multiplexores: </strong>Son  dispositivos que logran transmitir varios canales en un solo medio de  transmisión reuniendo varias señales a baja velocidad y transmitiéndolas posteriormente a  todas a través de un canal de alta velocidad. Pudiendo ser estos analógicos  (FDM) o digitales (TDM).</p>
+              <p><strong>Equipos  Terminales de Línea (ETL) :</strong> Estos pueden ser ópticos o eléctricos y su función  es la de adaptar las señales al medio de transmisión a ser utilizados. Siendo  estos generalmente fibras ópticas (etlo), cables coaxiales, pares simétricos  (ETL).</p>
+              <p><br />
+                <strong>Equipos  de Radio:</strong> son equipos terminales de líneas cuya función de  adaptar las señales eléctricas al medio de transmisión utilizados por estos, es  decir la atmósfera, pudiendo ser tanto analógicos como  digitales. Además se subdividen en enlaces terrestres y satelitales.</p>
+              <p> La estructura de una red telefónica ha de basarse en aquella disposición de sus elementos  integrantes que la hacen óptima de cara a la gestión del tráfico para el que se calcule. Para la consecución de esos objetivos se usan fundamentalmente dos conceptos: jerarquía en las redes y red  complementaria. La necesidad de una jerarquía en la red aparece inmediatamente  si se piensa interconectar plenamente a un numero alto de usuarios. Para conectar  a un número pequeño de usuarios se utilizan las centrales de conmutación. Pero  las centrales de conmutación poseen un límite máximo de usuarios a los que  pueden dar servicio. Superado éste número, se hace necesario el concurso de más  centrales de conmutación. Cuando el número de centrales de conmutación de mayor  entidad – de mayor nivel jerárquico – que gobierne las comunicaciones entre dos  centrales de conmutación de categoría – nivel jerárquico – inferior.</p>
+</div>
+				<p class="meta"><a href="#"><img src="images/up_16.png" alt="" width="16" height="16" />Regresar al Principio</a></p>
+		  </div>
+
+
+</div>
+
+	
+<div id="foot">Diseñado por: <a href="#">J.E.D</a>; Agradecimientos a: <a href="#">Dehivis Perez</a></div>
+</div></div>
+</body>
+</html>

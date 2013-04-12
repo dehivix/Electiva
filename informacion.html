@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Teleinformatica</title>
+<script type="text/javascript" src="jquery.js"></script>
+<style type="text/css">
+@import url(css.css);
+</style>
+<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" src="validacion.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+	
+	
+	$("#nav li").prepend("<span></span>"); //Throws an empty span tag right before the a tag
+	
+	$("#nav li").each(function() { //For each list item...
+		var linkText = $(this).find("a").html(); //Find the text inside of the a tag
+		$(this).find("span").show().html(linkText); //Add the text in the span tag
+	}); 
+	
+	$("#nav li").hover(function() {	//On hover...
+		$(this).find("span").stop().animate({ 
+			marginTop: "-40" //Find the span tag and move it up 40 pixels
+		}, 250);
+	} , function() { //On hover out...
+		$(this).find("span").stop().animate({
+			marginTop: "0" //Move the span back to its original state (0px)
+		}, 250);
+	});
+	
+	
+});
+</script>
+<script type="text/javascript">
+function showLightbox() {
+	document.getElementById('over').style.display='block';
+	document.getElementById('fade').style.display='block';
+}
+function hideLightbox() {
+	document.getElementById('over').style.display='none';
+	document.getElementById('fade').style.display='none';
+}
+</script>
+</head>
+<body>
+    <div id="wrapper">
+	<div id="header">
+<h1 align="center">...:Bienvenido:...</h1>
+<h2 align="center">&quot;A Nuestra Pagina Informativa de Teleinformatica&quot;</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+
+    <ul id="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="temas.html">Temas</a></li>
+        <li><a href="imagenes.html">Imagenes</a></li>
+        <li><a href="coment.php">Ver Comentarios</a></li>
+        <li><a href="comentarios.php">Comentar</a></li>
+    </ul>
+    <div id="content">
+
+<div class="post">
+<p>&nbsp;</p>
+<h3 class="date"><span class="title"><img src="images/down_16.png" alt="" width="16" height="16" /></span>Descargar<span class="title"><a href="archivos/informacion/Transmisión de la información.pdf"><img src="images/document-pdf.png" alt="" width="16" height="16" /></a></span> <span class="title"><a href="archivos/comunicacion/Medios de Comunicación.doc"><img src="images/document-word-text.png" alt="" width="16" height="16" /></a></span></h3></div>    
+			<h1 align="center"><strong>Transmisión de Información</strong></h1>
+			<div class="post">
+			  <div class="entry">
+		    <p><img src="images1/ist2_4960627-wireless-technology-icon-300x274.jpg" alt="" width="71" height="69" />La  comunicación es la transferencia de información de un lugar a otro, mientras  que la información es un patrón físico al cual se le ha asignado un significado  comúnmente acordado. El patrón debe ser único, separado y distinto, capaz de  ser enviado por un transmisor y de ser detectado y entendido por un receptor.  Así, la información es transmitida a través de señales eléctricas u ópticas  utilizando un canal de comunicación o medio de transmisión.</p>
+		    <p><b><a href="images1/man.jpg">Tipos de transmisión: </a></b>&nbsp;</p>
+		    <p><strong>Transmisión Análoga</strong>: En este  tipo de transmisión las señales trabajan en forma de frecuencias oscilantes por  medio de las cuales la información fluye de forma continua y constantes a  través de los canales de comunicación lo que hace que la transmisión sea  eficiente debido a la continuidad en el flujo de las mismas, este tipo de  señales es propia de las redes de telecomunicaciones telefónicas, radiales,  televisivas, entre otras.<br />
+              <strong>Transmisión Digital: </strong>son en  forma de líneas quebradas, en la que cada subida o bajada de la línea  representa el aumento o disminución del voltaje, estas señales trabajan con un  contador y un reloj los encargados de dirigir los pulsos digitales de la línea.<br />
+En  la transmisión digital existe dos ventajas estas son:</p>
+            <ol>
+              <li>El ruido no se acumula en los  repetidores.</li>
+              <li>El formato digital se adapta por  sí mismo de manera ideal a la tecnología de estados sólidos, particularmente en  los circuitos integrados.			  </li>
+            </ol>
+			  </div>
+              <div class="entry">
+              <p><b>Medios de transmisión:</b></p>
+              <p>Es  el enlace (eléctricos u ópticos) entre el transmisor y el receptor y sirve de  puente de unión entre la fuente y e l destino.<br />
+Los  medios de transmisión  más importantes,  se clasifican en dos tipos: los medios alambricos o medios tangibles confinados  y los inalámbricos o medios no confinados.<br />
+<strong>Medios confinados: </strong>la mejor  manera de clasificar este tipo de medios es como medios tangibles sobre  conductos de cobre, fibras de vidrio o contenedores metálicos. Una de sus  principales características es que se ven limitados por el medio y no sales de  él, excepto por algunas pérdidas.</p>
+              <ul>
+                <li>El alambre</li>
+                <li>El cable coaxial de doble forro</li>
+                <li>El cable par trenzado</li>
+                <li>Fibra óptica</li>
+              </ul>
+              <p><strong>Medios confinados:</strong> Los medios  que utilizan el aire como medio de transmisión son los medios no confinados.  Cada uno viene siendo un servicio que utiliza una banda del espectro de  frecuencia. A todo el rango de frecuencia se les conoce, espectro  electromagnético, el cual ha sido un recurso muy apreciado y, como es limitado,  tiene que ser administrado y regulado.<br />
+                La  ventaja de usar este tipo de bandas de frecuencias para comunicaciones locales  permite que decenas de estaciones de radios de FM y televisoras en ciudades  diferentes puedan usar frecuencias idénticas sin causar interferencias entre  ellas, (microondas terrestres).</p>
+              </div>
+              <div class="entry">
+              <p><b>Modos de transmisión: </b></p>
+              <p>Se  refiere al número de unidades de información (bits) elementales que se pueden  traducir simultáneamente a través de los canales de comunicación. De hecho, los  procesadores (y por lo tanto, los equipos en general) nunca procesan (en el  caso de los procesadores actuales) un solo bit al mismo tiempo. Generalmente  son capaces de procesar varios (la mayoría de la veces 8 bits: 1 byte) y por este  motivo, las conexiones básicas de un equipo son conexiones paralelas.<br />
+                <strong>Conexiones en  serie y paralelas:</strong></p>
+              <ul>
+                <li><strong>Conexión paralela: </strong>Consiste en transmisiones  simultáneas N cantidades de bits se envían simultáneamente a través de  diferentes canales N (un canal puede ser, por ejemplo, un alambre, un cable o  cualquier otro medio físico). La conexión paralela en equipos del tipo PC  generalmente requiere 10 alambres.</li>
+                <li><strong>Conexión en serie:</strong><strong> </strong>los  datos se transmiten a un bit por vez a través del canal de transmisión. Sin embargo,  ya que muchos procesadores procesan los datos paralelos, el transmisor necesita  transformar los datos paralelos en grandes en datos seriales y el receptor  necesita hacer lo contrario.</li>
+              </ul>
+              <p><strong>Transmisión sincrónica  y asincrónica: </strong></p>
+              <ul>
+                <li><strong>Transmisión Asincrónica: </strong>En la que cada  carácter se envía en intervalos de tipos irregulares (por ejemplo, un usuario  enviando caracteres que se introducen en el teclado en tiempo real). Así, por  ejemplo, imagine que se transmite un solo bit durante un largo periodo de  silencio… El receptor no será capaz de darse cuenta si esto es  00010000,10000000 o 00000100.<strong></strong></li>
+                <li><strong>Transmisión Sincrónica: </strong>El transmisor y le  receptor están sincronizador con el mismo reloj. el receptor recibe  continuamente (incluso hasta cuando no hay transmisión de bits) la información  a la misma velocidad que el transmisor la envía. Es por este motivo que el  receptor y el transmisor están sincronizados a la misma velocidad.<strong></strong></li>
+              </ul>
+              </div>
+              <div class="entry">
+              <p><b>Dirección de transmisión:</b></p>
+              <p>Según  el sentido de la transmisión podemos encontrar 3 tipos diferentes:</p>
+              <ul>
+                <li><strong>simplex:</strong> Este modo de transmisión permite que  la información discurra en solo sentido y de forma permanente, con esta formula  es difícil la corrección de errores causados por deficiencias de líneas. Como  ejemplos de la vida diaria tenemos, la televisión y la radio.</li>
+                <li><strong><a href="images1/laptopanddualport.gif">Half dúplex:</a></strong> En este modo, la transmisión  fluye como en el anterior, o sea, en un único sentido de la transmisión de  datos, pero de una manera permanente, pues el sentido puede cambiar, como  ejemplo tenemos los Walkis Talkis.</li>
+              </ul>
+              <p><strong>Full dúplex:</strong> Es el método de comunicación  más aconsejable, puesto que en todo momento la comunicación puede ser en dos  sentidos posibles y así pueden corregir los errores de manera instantánea y permanente. El  ejemplo típico seria el teléfono.</p>
+</div>
+ <p class="meta"><a href="#"><img src="images/up_16.png" alt="" width="16" height="16" />Regresar al Principio</a></p>
+
+			</div></div>
+
+
+
+	
+<div id="foot">Diseñado por: <a href="#">J.E.D</a>; Agradecimientos a: <a href="#">Dehivis Perez</a></div>
+</div></div>
+</body>
+</html>

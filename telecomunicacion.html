@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Teleinformatica</title>
+<script type="text/javascript" src="jquery.js"></script>
+<style type="text/css">
+@import url(css.css);
+</style>
+<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" src="validacion.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+	
+	
+	$("#nav li").prepend("<span></span>"); //Throws an empty span tag right before the a tag
+	
+	$("#nav li").each(function() { //For each list item...
+		var linkText = $(this).find("a").html(); //Find the text inside of the a tag
+		$(this).find("span").show().html(linkText); //Add the text in the span tag
+	}); 
+	
+	$("#nav li").hover(function() {	//On hover...
+		$(this).find("span").stop().animate({ 
+			marginTop: "-40" //Find the span tag and move it up 40 pixels
+		}, 250);
+	} , function() { //On hover out...
+		$(this).find("span").stop().animate({
+			marginTop: "0" //Move the span back to its original state (0px)
+		}, 250);
+	});
+	
+	
+});
+</script>
+<script type="text/javascript">
+function showLightbox() {
+	document.getElementById('over').style.display='block';
+	document.getElementById('fade').style.display='block';
+}
+function hideLightbox() {
+	document.getElementById('over').style.display='none';
+	document.getElementById('fade').style.display='none';
+}
+</script>
+</head>
+<body>
+    <div id="wrapper">
+	<div id="header">
+<h1 align="center">...:Bienvenido:...</h1>
+<h2 align="center">&quot;A Nuestra Pagina Informativa de Teleinformatica&quot;</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+
+    <ul id="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="temas.html">Temas</a></li>
+        <li><a href="imagenes.html">Imagenes</a></li>
+        <li><a href="coment.php">Ver Comentarios</a></li>
+        <li><a href="comentarios.php">Comentar</a></li>
+    </ul>
+    <div id="content">
+
+<div class="post">
+<p>&nbsp;</p>
+<h3 class="date"><span class="title"><img src="images/down_16.png" alt="" width="16" height="16" /></span>Descargar<span class="title"><a href="archivos/informacion/Transmisión de la información.pdf"><img src="images/document-pdf.png" alt="" width="16" height="16" /></a></span> <span class="title"><a href="archivos/comunicacion/Medios de Comunicación.doc"><img src="images/document-word-text.png" alt="" width="16" height="16" /></a></span></h3></div>    
+			<h1 align="center"><strong>Telecomunicaciones</strong></h1>
+			<div class="post">
+			  <div class="entry">
+		    <p align="justify"><img src="images1/comunicacion.jpeg" alt="" width="71" height="69" />La telecomunicación es un termino establecido en la XIII Conferencia de la UTI (Unión Telegráfica Internacional) y III de la URI (Unión Radiotelegráfica Internacional), donde se le da el Nombre a una nueva organización de Telecomunicaciones pero en fin para la interrogante ¿Porque el nombre de telecomunicaciones? Pues se tomo el nombre de telecomunicaciones por el objetivo de ambas uniones que era crear una forma de comunicación masiva y que pudiera cruzar el mar (comunicación a distancia) y ya se estableciá la palabra telecomunicaciones como muchas otras palabras ya existentes de su raíz griega la palabra tele que significaba lejana y communicare que es comunicación y asáse dio el nombre (cumpliendo con el objetivo deseado). Pero eso no es todo las telecomunicaciones con su fin original no quedaron solo en ondas estáticas por cables, o simples sonidos, no ellas buscaban comunicar fotos, videos y demás, esto se logra un poco mejor con la llegada de las computadoras, con la utilización de satélites para enviar señales y ondas que podrían decodificarse y ser mostradas en forma de imágenes secuenciales (recibimiento de las primeras ondas televisivas) y a su vez un tiempo después con una de las herramientas muy imprescindible el Internet. Las telecomunicaciones con la llegada del Internet tuvieron su revolución más importante puesto que ahora se cumplía por completo el deseo de sus creadores que era el envío y recibimiento de información a largas distancias, pero no solo eso también se podrían recibir datos de un lugar del mundo a otro en poco tiempo y dar respuesta (comunicación bidireccional). Tomando en cuenta que las telecomunicaciones no solamente están basadas en envío y recibimiento de información de manera libre, es decir, se necesita un sistema o conjunto de sistemas los cuales permitan la intercomunicación de datos, estos pueden ser como se acoto anteriormente públicos (libres a un punto especifico, vigilados por el gobierno) o privados (pagos o bajo la responsabilidad de una entidad fija).</p>
+		    
+		    <p align="justify"><br />
+             Los sistemas de utilizados para la comunicación de datos son:<br/>
+
+Sistemas de telecomunicaciones: son el conjunto de herramientas físicas (cableado de comunicación de datos directa) o enlazadas (MODEM, router), utilizables para la prestación de un determinado servicio de comunicación a distancia. Se podría decir que son los dispositivos alámbricos o no que permiten la comunicación de datos a distancia. Un gran ejemplo seria la conexión de diversos computadores por medios físicos.
+
+Servicio de telecomunicaciones: son las actividades desarrolladas por terceros (una empresa o nÃºcleo de empresas) que se responsabiliza en ofrecer la intercomunicación de datos a un/os usuario/s, esto puede ser por medio de cableados o por medio de decodificadores y sirve para el suscritor del servicio en especifico. Básicamente serian los servicios de Internet y telefonía (celular o fija) 
+
+ 
+Servicio publico de telecomunicaciones: son las actividades desarrolladas por el gobierno el cual se responsabiliza en ofrecer la intercomunicación de datos a unos usuarios, este a su vez puede dejar el mismo a cargo de empresas, sindicatos u organizaciones especializadas en las mismas. La red inalámbrica de algún centro u organización privada.:</p>
+            
+			  </div>
+  
+             
+ <p class="meta"><a href="#"><img src="images/up_16.png" alt="" width="16" height="16" />Regresar al Principio</a></p>
+
+			</div></div>
+
+
+
+	
+<div id="foot">Diseñado por: <a href="#">J.E.D</a>; Agradecimientos a: <a href="#">Dehivis Perez</a></div>
+</div></div>
+</body>
+</html>

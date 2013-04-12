@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Teleinformatica</title>
+<script type="text/javascript" src="jquery.js"></script>
+<style type="text/css">
+@import url(css.css);
+</style>
+<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" src="validacion.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+	
+	
+	$("#nav li").prepend("<span></span>"); //Throws an empty span tag right before the a tag
+	
+	$("#nav li").each(function() { //For each list item...
+		var linkText = $(this).find("a").html(); //Find the text inside of the a tag
+		$(this).find("span").show().html(linkText); //Add the text in the span tag
+	}); 
+	
+	$("#nav li").hover(function() {	//On hover...
+		$(this).find("span").stop().animate({ 
+			marginTop: "-40" //Find the span tag and move it up 40 pixels
+		}, 250);
+	} , function() { //On hover out...
+		$(this).find("span").stop().animate({
+			marginTop: "0" //Move the span back to its original state (0px)
+		}, 250);
+	});
+	
+	
+});
+</script>
+<script type="text/javascript">
+function showLightbox() {
+	document.getElementById('over').style.display='block';
+	document.getElementById('fade').style.display='block';
+}
+function hideLightbox() {
+	document.getElementById('over').style.display='none';
+	document.getElementById('fade').style.display='none';
+}
+</script>
+</head>
+<body>
+    <div id="wrapper">
+	<div id="header">
+<h1 align="center">...:Bienvenido:...</h1>
+<h2 align="center">&quot;A Nuestra Pagina Informativa de Teleinformatica&quot;</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+
+    <ul id="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="temas.html">Temas</a></li>
+        <li><a href="imagenes.html">Imagenes</a></li>
+        <li><a href="coment.php">Ver Comentarios</a></li>
+        <li><a href="comentarios.php">Comentar</a></li>
+    </ul>
+    <div id="content">
+
+<div class="post">
+				<h1 align="center"><strong>Modulacion</strong></h1>
+                <h3 class="date"><span class="title"><img src="images/down_16.png" alt="" width="16" height="16" /></span>Descargar&nbsp;<span class="title"><a href="archivos/Modulacion/Modulacion.pdf"><img src="images/document-pdf.png" alt="" width="16" height="16" /></a></span> <span class="title"><a href="archivos/Modulacion/Modulacion.doc"><img src="images/document-word-text.png" alt="" width="16" height="16" /></a></span></h3>
+
+				<div class="entry">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Modular una señal consiste en modificar alguna de las características de esa señal, llamada portadora, de acuerdo con las características de otra señal llamada moduladora.</p>
+					<p><img src="images1/image003.gif" alt="" width="565" height="234" /></p>
+					<p>El objetivo de modular una señal, es tener un control sobre la misma.  El control se hará sobre ciertos elementos característicos de una oscilación continua; estos son modificados según la forma de onda de la señal que se desea transmitir.</p>
+					<p>Los parámetros o magnitudes fundamentales de una señal analógica son:</p>
+					<p><ul>
+                    <li>Amplitud</li>
+                    <li>Frecuencia</li>
+                    <li>Fase</li>
+                    </ul>
+                    &nbsp;
+                    <p><img src="images1/image005.gif" alt="" width="350" height="220" /></p>
+                    <p><img src="images1/image006.gif" alt="" width="368" height="180" /></p>
+</div>
+<div class="entry">
+<p><b>Tipos de modulación por parámetros:</b></p>
+<p><ul>
+<li>Modulación por Amplitud (AM): Este es un caso de modulación donde tanto las señales de transmisión como las señales de datos son analógicas.</li>
+<li>Modulación por Frecuencia (FM): Este es un caso de modulación donde tanto las señales de transmisión como las señales de datos son analógicas y es un tipo de modulación exponencial.</li>
+<li>Modulación por Fase (PM): Este también  es un caso de modulación donde tanto las señales de transmisión como las señales de datos son analógicas y es un tipo de modulación exponencial al igual que la modulación de frecuencia.</li>
+</ul>&nbsp;</p>
+</div>
+<div class="entry">
+<p><b>Tipos de modulación por impulsos:</b></p>
+<p><b><a>PCM (PULSE CODE MODULATION): </a></b>Modulación por código de impulsos. Es un proceso digital de modulación para convertir una señal analógica en un código digital. La señal analógica se muestrea, es decir, se mide periódicamente.</p>
+<p><b><a>PWN (PULSE WIDTH MODULATION): </a></b>La modulación por ancho de pulsos (MAP O PWM,  siglas a la ingle Pulse-Width Modulation) de una señal o fuente de energía es una técnica en la que se modifica el siclo de trabajo de una señal periódica (una sinusoidal o una cuadrada).</p>
+<p><b><a>PAM (PULSE AMPLITUDE MODULATION): </a></b>Es la más sencilla de las modulaciones digitales. Consiste en cambiar  la amplitud de una señal, de frecuencia fija, en función del símbolo a transmitir.</p>
+<p><b><a>PPM (PULSE POSITION MODULATION): </a></b>Es un tipo de modulación en la que una palabra R bits es codificada por la transmisión de un único pulso que puede encontrarse en alguna de las 2m posiciones posibles.&nbsp;</p>
+</div>
+<div class="entry">
+<p><b>Código Morse: </b></p>
+<p>Es un medio de  comunicación basado en la transmisión y recepción de mensajes empleando sonidos  o rayos de luz y un alfabeto alfanumérico compuesto por puntos y rayas. Aunque  este código surgió en el siglo XIX, su empleo es perfectamente utilizable hoy  en día cuando la existencia de condiciones atmosférica adversas no permite el  empleo de otros medios más desarrollados como, por ejemplo, la transmisión de  la voz.</p>
+</div>
+<div class="entry">
+<p><b>Regla nemotécnica grafica: </b></p>
+<p>Otra regla para mejorar el  aprendizaje del código Morse, recurre a las fuertes presencia que tienen las  imágenes de las letras. A fin de ser el recurso de ayuda a la memoria.</p>
+</div>
+<div class="entry">
+<p><b>Regla nemotécnica:</b></p>
+<p>
+<ul>
+<li>La inicial de la palabra clave es la letra correspondiente.</li>
+<li>El número de vocales que contiene la palabra clave indica la longitud de la codificación en Morse de dicha letra.</li>
+<li>Si la vocal es una O se sustituye por una raya (-)</li>
+<li>Si se trata de cualquier otra vocal se sustituye por un punto (.)</li>
+<li>Al sustituir solo se tendrá en cuenta los puntos y rayas obtenidas hasta la totalidad de la longitud en Morse.
+
+</li>
+</ul>&nbsp;</p>
+</div>
+              
+		  <p class="meta"><a href="#"><img src="images/up_16.png" alt="" width="16" height="16" />Regresar al Principio</a></p>
+          </div>
+
+
+</div>
+
+	
+<div id="foot">Diseñado por: <a href="#">J.E.D</a>; Agradecimientos a: <a href="#">Dehivis Perez</a></div>
+</div></div>
+</body>
+</html>

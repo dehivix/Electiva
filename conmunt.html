@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Teleinformatica</title>
+<script type="text/javascript" src="jquery.js"></script>
+<style type="text/css">
+@import url(css.css);
+</style>
+<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" src="validacion.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+	
+	
+	$("#nav li").prepend("<span></span>"); //Throws an empty span tag right before the a tag
+	
+	$("#nav li").each(function() { //For each list item...
+		var linkText = $(this).find("a").html(); //Find the text inside of the a tag
+		$(this).find("span").show().html(linkText); //Add the text in the span tag
+	}); 
+	
+	$("#nav li").hover(function() {	//On hover...
+		$(this).find("span").stop().animate({ 
+			marginTop: "-40" //Find the span tag and move it up 40 pixels
+		}, 250);
+	} , function() { //On hover out...
+		$(this).find("span").stop().animate({
+			marginTop: "0" //Move the span back to its original state (0px)
+		}, 250);
+	});
+	
+	
+});
+</script>
+<script type="text/javascript">
+function showLightbox() {
+	document.getElementById('over').style.display='block';
+	document.getElementById('fade').style.display='block';
+}
+function hideLightbox() {
+	document.getElementById('over').style.display='none';
+	document.getElementById('fade').style.display='none';
+}
+</script>
+</head>
+<body>
+    <div id="wrapper">
+	<div id="header">
+<h1 align="center">...:Bienvenido:...</h1>
+<h2 align="center">&quot;A Nuestra Pagina Informativa de Teleinformatica&quot;</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+
+    <ul id="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="temas.html">Temas</a></li>
+        <li><a href="imagenes.html">Imagenes</a></li>
+        <li><a href="coment.php">Ver Comentarios</a></li>
+        <li><a href="comentarios.php">Comentar</a></li>
+    </ul>
+    <div id="content">
+
+<div class="post">
+				<h1 align="center"><strong>Conmutacion</strong></h1>
+                <h3 class="date"><span class="title"><img src="images/down_16.png" alt="" width="16" height="16" /></span>Descargar&nbsp;<span class="title"><a href="archivos/conmutacion/conmutacion.pdf"><img src="images/document-pdf.png" alt="" width="16" height="16" /></a></span> <span class="title"><a href="archivos/conmutacion/conmutacion.doc"><img src="images/document-word-text.png" alt="" width="16" height="16" /></a></span></h3>
+
+				<div class="entry">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Es la conexión que realizan los diferentes nodos que existen en distintos lugares y distancias para lograr un camino apropiado para conectar dos usuarios de una red de telecomunicaciones. La conmutación permite la descongestión entre los usuarios de la red disminuyendo el tráfico y aumentando el banda ancha. Es una tecnología que alivia la congestión en las LAN Ethernet, reduciendo el tráfico y aumentando el ancho de banda.&nbsp;</p>
+			  </div>
+              <div class="entry">
+              <p><b><a href="images1/conmutacion de circuitos.png">Conmutación de circuito </a></b><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Es aquella en la que los equipos de conmutación deben establecer un camino físico entre los medios de comunicación previa a la conexión entre los usuarios. Este camino permanece activo durante la comunicación entre los usuarios, liberándose al terminar la comunicación. Ejemplo: Red Telefónica Conmutada.              </p>
+<p>	Su funcionamiento pasa por las siguientes etapas: solicitud, establecimiento, transferencia de archivos y liberación de conexión. </p>
+              </div>
+              <div class="entry">
+              <p><b>Conmutación de mensajes</b><img src="images1/mensajes.gif" alt="" width="78" height="39" /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Este método era el usado por los sistemas telegráficos, siendo el más antiguo que existe. Para transmitir un mensaje a un receptor, el emisor debe enviar primero el mensaje completo a un nodo intermedio el cual lo encola en la cola donde almacena los mensajes que le son enviados por otros nodos. Luego, cuando llega su turno, lo reenviará a otro y éste a otro y así las veces que sean necesarias antes de llegar al receptor. El mensaje deberá ser almacenado por completo y de forma temporal en el nodo intermedio antes de poder ser reenviado al siguiente, por lo que los nodos temporales deben tener una gran capacidad de almacenamiento.</p>
+<p>&nbsp;</p>
+              </div>
+              <div class="entry"><p><b>Conmutación de paquetes </b><br />El emisor divide los mensajes a enviar en un número arbitrario de paquetes del mismo tamaño, donde adjunta una cabecera y la dirección origen y destino así como datos de control que luego serán transmitidos por diferentes medios de conexión entre nodos temporales hasta llegar a su destino. Este método de conmutación es el que más se utiliza en las redes de ordenadores actuales. Surge para optimizar la capacidad de transmisión a través de las líneas existentes.<br /><br />Al igual que en la conmutación de mensajes, los nodos temporales almacenan los paquetes en colas en sus memorias que no necesitan ser demasiado grandes.<br /><br /><b>Modos de conmutación</b><br /><br />
+              <b><a><img src="images/shield_16.png" alt="" width="16" height="16" /> Circuito Virtual</a></b>
+              </p>
+                <p><ul>
+                <li>Cada paquete se encamina por el mismo circuito virtual que los anteriores.</li>
+                <li>Por tanto se controla y asegura el orden de llegada de los paquetes a destino</li>
+                </ul>
+                <p><b><a><img src="images/shield_16.png" alt="" width="16" height="16" /> Datagramas</a></b></p>
+                <p><p><ul>
+                <li>Cada paquete se encamina de manera independiente de los  demás.</li>
+                <li>Por tanto la red no puede controlar el camino seguido por los paquetes, ni asegurar el orden de llegada a destino.</li>
+                </ul>&nbsp;</p>
+              
+              </div>
+		  <p class="meta"><a href="#"><img src="images/up_16.png" alt="" width="16" height="16" />Regresar al Principio</a></p>
+          </div>
+
+
+</div>
+
+	
+<div id="foot">Diseñado por: <a href="#">J.E.D</a>; Agradecimientos a: <a href="#">Dehivis Perez</a></div>
+</div></div>
+</body>
+</html>

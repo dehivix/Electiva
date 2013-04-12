@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Teleinformatica</title>
+<script type="text/javascript" src="jquery.js"></script>
+<style type="text/css">
+@import url(css.css);
+</style>
+<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" src="validacion.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+	
+	
+	$("#nav li").prepend("<span></span>"); //Throws an empty span tag right before the a tag
+	
+	$("#nav li").each(function() { //For each list item...
+		var linkText = $(this).find("a").html(); //Find the text inside of the a tag
+		$(this).find("span").show().html(linkText); //Add the text in the span tag
+	}); 
+	
+	$("#nav li").hover(function() {	//On hover...
+		$(this).find("span").stop().animate({ 
+			marginTop: "-40" //Find the span tag and move it up 40 pixels
+		}, 250);
+	} , function() { //On hover out...
+		$(this).find("span").stop().animate({
+			marginTop: "0" //Move the span back to its original state (0px)
+		}, 250);
+	});
+	
+	
+});
+</script>
+<script type="text/javascript">
+function showLightbox() {
+	document.getElementById('over').style.display='block';
+	document.getElementById('fade').style.display='block';
+}
+function hideLightbox() {
+	document.getElementById('over').style.display='none';
+	document.getElementById('fade').style.display='none';
+}
+</script>
+</head>
+<body>
+    <div id="wrapper">
+	<div id="header">
+<h1 align="center">...:Bienvenido:...</h1>
+<h2 align="center">&quot;A Nuestra Pagina Informativa de Teleinformatica&quot;</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+
+    <ul id="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="temas.html">Temas</a></li>
+        <li><a href="imagenes.html">Imagenes</a></li>
+        <li><a href="coment.php">Ver Comentarios</a></li>
+        <li><a href="comentarios.php">Comentar</a></li>
+    </ul>
+    <div id="content">
+
+<div class="post">
+				<h1 align="center"><strong>Temas</strong></h1>
+
+				<div class="entry">
+				  <p><b><a>Conmutación:</a></b>&nbsp;Es la conexión que realizan los diferentes nodos  que existen en distintos lugares y distancias para lograr un camino apropiado  para conectar dos usuarios de una red de telecomunicaciones.<br />
+                  	<p class="meta"><a href="conmunt.html" class="more">Leer Art&iacute;culo completo</a> <b>|</b></p>                  				</div>
+                    <div class="entry">
+                    <p><b><a>Teleinformatica:</a></b>&nbsp;Conjunto de servicios y técnicas que asocian las telecomunicaciones y la informática. <br />
+                    <p class="meta"><a href="teleinfor.html" class="more">Leer Art&iacute;culo completo</a> <b>|</b></p>   
+                    </p>
+                    </div>
+                    <div class="entry">
+                    <p><b><a>Modulacion: </a></b>&nbsp;Modular una señal consiste en modificar alguna de las características de esa señal, llamada portadora, de acuerdo con las características de otra señal llamada moduladora.<p class="meta"><a href="modulacion.html" class="more">Leer Art&iacute;culo completo</a> <b>|</b></p></p>
+                    </div>
+                    <div class="entry">
+                    <p><b><a>Medios de Comunicación</a></b>&nbsp;Como medio de comunicación se hace referencia al instrumento o forma de contenido por el cual se realiza el proceso comunicacional o comunicación.<p class="meta"><a href="comunicacion.html" class="more">Leer Art&iacute;culo completo</a> <b>|</b></p></p>
+                    </div>
+                    <div class="entry">
+					<p><b><a>Transmision de Información</a></b>&nbsp;La comunicación es la transferencia de información de un lugar a otro, mientras que la información es un patrón físico al cual se le ha asignado un significado comúnmente acordado...<p class="meta"><a href="informacion.html" class="more">Leer Art&iacute;culo completo</a> <b>|</b></p></p>
+                    </div>
+					<div class="entry">
+					<p><b><a>Telecomunicaciones</a></b>&nbsp; son el conjunto de herramientas físicas (cableado de comunicación de datos directa) o enlazadas (MODEM, router), utilizables para la prestación de un determinado servicio de comunicación a distancia.<p class="meta"><a href="telecomunicacion.html" class="more">Leer Art&iacute;culo completo</a> <b>|</b></p></p>
+                    </div>
+					<div class="entry">
+					<p><b><a>Código Morse</a></b>&nbsp;El sistema representa las letras del alfabeto, los números y otros signos mediante una combinación de puntos, rayas y espacios.<p class="meta"><a href="morse.html" class="more">Leer Art&iacute;culo completo</a> <b>|</b></p></p>
+                    </div>
+			
+			</div>
+
+
+
+</div>
+
+	
+<div id="foot">Diseñado por: <a href="#">J.E.D</a>; Agradecimientos a: <a href="#">Dehivis Perez</a></div>
+</div></div>
+</body>
+</html>

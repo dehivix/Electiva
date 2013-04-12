@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Teleinformatica</title>
+<script type="text/javascript" src="jquery.js"></script>
+<style type="text/css">
+@import url(css.css);
+</style>
+<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" src="validacion.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+	
+	
+	$("#nav li").prepend("<span></span>"); //Throws an empty span tag right before the a tag
+	
+	$("#nav li").each(function() { //For each list item...
+		var linkText = $(this).find("a").html(); //Find the text inside of the a tag
+		$(this).find("span").show().html(linkText); //Add the text in the span tag
+	}); 
+	
+	$("#nav li").hover(function() {	//On hover...
+		$(this).find("span").stop().animate({ 
+			marginTop: "-40" //Find the span tag and move it up 40 pixels
+		}, 250);
+	} , function() { //On hover out...
+		$(this).find("span").stop().animate({
+			marginTop: "0" //Move the span back to its original state (0px)
+		}, 250);
+	});
+	
+	
+});
+</script>
+<script type="text/javascript">
+function showLightbox() {
+	document.getElementById('over').style.display='block';
+	document.getElementById('fade').style.display='block';
+}
+function hideLightbox() {
+	document.getElementById('over').style.display='none';
+	document.getElementById('fade').style.display='none';
+}
+</script>
+</head>
+<body>
+    <div id="wrapper">
+	<div id="header">
+<h1 align="center">...:Bienvenido:...</h1>
+<h2 align="center">&quot;A Nuestra Pagina Informativa de Teleinformatica&quot;</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+
+    <ul id="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="temas.html">Temas</a></li>
+        <li><a href="imagenes.html">Imagenes</a></li>
+        <li><a href="coment.php">Ver Comentarios</a></li>
+        <li><a href="comentarios.php">Comentar</a></li>
+    </ul>
+    <div id="content">
+
+<div class="post">
+<p>&nbsp;</p>
+<h3 class="date"><span class="title"><img src="images/down_16.png" alt="" width="16" height="16" /></span>Descargar<span class="title"><a href="archivos/informacion/Transmisión de la información.pdf"><img src="images/document-pdf.png" alt="" width="16" height="16" /></a></span> <span class="title"><a href="archivos/comunicacion/Medios de Comunicación.doc"><img src="images/document-word-text.png" alt="" width="16" height="16" /></a></span></h3></div>    
+			<h1 align="center"><strong>Código Morse</strong></h1>
+			<div class="post">
+			  <div class="entry">
+		    <p align="justify">El sistema representa las letras del alfabeto, los números y otros signos mediante una combinación de puntos, rayas y espacios. Cada punto representa una unidad y cada raya tres unidades. El sistema que invento Samuel Morse fue mejorado después por un ayudante suyo llamado Alfred Vail. 
+
+Tras su introducción en Europa se hizo evidente que el código original Morse no era adecuado para la transmisión de textos que no fueran en inglés, al faltarle códigos para letras con signos diacríticos. Para remediar esta deficiencia se diseñó en una conferencia europea de naciones, celebrada en 1851, un Código Morse Internacional al que también se le conoce como Código Morse Continental. Aunque los dos sistemas son similares este último es más simple y preciso. Por ejemplo, las rayas en el Código Internacional son de longitud constante mientras que en el original eran de longitud variable.
+</p>
+		    <P align="center"><strong>Código Morse</strong></P>
+			<img src="images1/Codigo.jpg" alt="" width="565" height="302"/>
+			
+		    <p align="justify"><br />
+             <strong>Formas de transmitir  el Código Morse:</strong><br/>
+La raya se interpreta acústicamente con un sonido largo o visualmente con una ráfaga de luz larga. El punto con un sonido corto o con una ráfaga de luz corta. Lo más utilizado para desarrollar el aprendizaje del código Morse para todo el mundo es la utilización de  un silbato o una linterna</p>
+
+ 
+
+<p align="justify"><strong>También se utilizan otros símbolos para escribir en papel los mensajes, que son las barras diagonales “/”. Significado:</strong><br/>
+
+/ = Separación de letras<br />
+
+// = Separación de palabras</p>
+
+ 
+
+<p align="justify"><strong>Ejemplificación del Código Morse</strong>
+
+. .-.. / .- ...- .- -. -.-. . / . -. / .-.. .- / -.-. --- -- ..- -. .. -.-. .- -.-. .. --- -. / -.. . / .-.. --- ... / -.. .- - --- ... / .- / .- ...- .- -. --.. .- -.. --- / -.. . / - .- .-.. / -- .- -. . .-. .- / --.- ..- . / .- .... --- .-. .- / . -. / ...- . --.. / -.. . / ..- - .. .-.. .. --.. .- .-. / . .-.. / . -. -.-. .-. .. .--. - .- -.. .- / -.. . .-.. / -.-. --- -.. .. --. --- / -- --- .-. ... . / ... . / ..- - .. .-.. .. --.. .- / .-.. .- / . -. -.-. .-. .. .--. - .- -.. .- / -.. . .-.. / .- ... -.-. .. ..</p>
+
+<p align="justify"><strong>Traducción:</strong><br/>   
+
+El avance en la comunicación de los datos a avanzado de tal manera que ahora en vez de utilizar la encriptada del código Morse se utiliza la encriptada del ASCII</p>
+            
+			  </div>
+  
+             
+ <p class="meta"><a href="#"><img src="images/up_16.png" alt="" width="16" height="16" />Regresar al Principio</a></p>
+
+			</div></div>
+
+
+
+	
+<div id="foot">Diseñado por: <a href="#">J.E.D</a>; Agradecimientos a: <a href="#">Dehivis Perez</a></div>
+</div></div>
+</body>
+</html>
